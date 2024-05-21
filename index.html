@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marini Dwi Astuti- Calculator Assignment</title>
+    
+    <link rel="stylesheet" href="././css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+
+</head>
+<body>
+    <script src="./js/script.js"></script>
+
+    <!-- header -->
+    <header>
+        <section>
+            <div class="jumbotron">
+                <h1>Welcome to Katik</h1>
+                <p>Hello, Friends! Selamat datang di Katik.</p>
+                <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga.</p>
+            </div>
+            
+        </section>
+
+        <section>
+                <nav>
+                <div class="btn">
+                    <a href="#luas-segitiga">Luas Segitiga</a>
+                </div>
+                
+                <div class="btn-2">
+                    <a href="#keliling-segitiga">Keliling Segitiga</a>
+                </div>
+               </nav> 
+        </section> 
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main>
+        <section id="luas-segitiga" class="card">
+            <div class="content-luas">
+                <h2>Luas Segitiga</h2>
+            </div>
+            <div class="rumus-img">
+                <img src=https://www.dosenpendidikan.co.id/wp-content/uploads/2023/11/Rumus-Segitigas-Sama-Kaki-e1699800087691.jpg alt="Rumus Segitiga">
+            </div>
+            
+            <div class="keterangan-luas">
+                <p>Rumus Luas Segitiga yaitu :</p>
+                <p class="rumus">
+                    L = 1/2 x a x t
+                </p>
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>a = Panjang Alas</p>
+                <p>t = Tinggi</p>
+            </div>
+            <hr>
+
+            <div class="perhitungan-luas">
+                <header>
+                    <h2>Hitung Luas Segitiga</h2>
+                </header>
+                <form>
+                    <input type="number" id="alas" name="alas" placeholder="Nilai Alas">
+                <br>
+                    <input type="number" id="tinggi" name="tinggi" placeholder="Nilai Tinggi">
+                    <br>
+                </form>
+            </div>
+
+            <div id="luas"></div>
+            <div id="hasilperhitungan"></div>
+            
+            <div class="button">
+                <div class="hitung">
+                    <button id="hitung" onclick="hitungluas()">Hitung</button>
+                </div>
+                
+                <div class="reset">
+                     <button id="resetbtn" onclick="resetluas()">Reset</button> 
+                </div>
+               
+            </div>
+            
+        </section>
+
+        <section id="keliling-segitiga" class="card">
+            <div class="content-keliling">
+                <h2>Keliling Segitiga</h2>
+            </div>
+            <div class="rumus-img">
+                <img src=https://www.dosenpendidikan.co.id/wp-content/uploads/2023/11/Rumus-Segitigas-Sama-Kaki-e1699800087691.jpg alt="Rumus Segitiga">
+            </div>
+            
+            <div class="keterangan-keliling">
+                <p>Rumus Keliling Segitiga yaitu :</p>
+                <p class="rumus">
+                    K = S1 + S2 + S3
+                </p>
+                <p>Di mana:</p>
+                <p>K = Keliling</p>
+                <p>S1 = Sisi A</p>
+                <p>S2 = Sisi B</p>
+                <p>S3 = Sisi C</p>
+            </div>
+            <hr>
+
+            <div class="perhitungan-keliling">
+                <header>
+                    <h2>Hitung Keliling Segitiga</h2>
+                </header>
+                <form>
+                    <input type="number" id="S1" name="S1" placeholder="Sisi A">
+                    <br>
+                    <input type="number" id="S2" name="S2" placeholder="Sisi B">
+                    <br>
+                    <input type="number" id="S3" name="S3" placeholder="Sisi C">
+                    <br>
+                </form>
+            </div>
+
+            <div id="keliling"></div>
+            <div id="hasilkeliling"></div>
+            <div class="button">
+                <div class="hitung">
+                   <button id="hitung" onclick="hitungkeliling()">Hitung</button> 
+                </div>
+                
+                <div class="reset">
+                    <button id="resetbtn" onclick="resetkeliling()">Reset</button>
+                </div>
+                
+            </div>
+            
+        </section>        
+    </main>
+<!-- main -->
+
+<!-- footer -->
+    <footer>
+        <p>Marini Dwi Astuti - Kalkulator &copy;RevoU 2024</p>
+    </footer>
+<!-- footer -->
+</body>
+</html>
